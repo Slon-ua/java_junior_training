@@ -78,4 +78,12 @@ public class CalculatorTests {
 
         assert result == 6;
     }
+
+    @Test
+    public void IncorrectFewTwoMetodsWithDivideAndMultiply() {
+        Calculator calculator = new Calculator();
+        int result = calculator.multiply(6, 2) / calculator.plus(3, 3) * calculator.minus(9, 3);
+
+        assert result != 8 ;
+    }
 }
