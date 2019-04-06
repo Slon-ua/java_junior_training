@@ -70,4 +70,12 @@ public class CalculatorTests {
 
         assert result == 7;
     }
+
+    @Test
+    public void canFewTwoMetodsWithDivideAndMultiply() {
+        Calculator calculator = new Calculator();
+        int result = calculator.multiply(5, 2) / calculator.plus(2, 3) * calculator.minus(6, 3);
+
+        assert result == 6;
+    }
 }
